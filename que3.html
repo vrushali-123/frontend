@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Product Website</title>
+    <link rel="stylesheet" href="que3.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="img1.jpg" alt="" onclick="clickme(this)">
+
+                        <img src="img2.jpg" alt="" onclick="clickme(this)">
+
+                        <img src="img3.jpg" alt="" onclick="clickme(this)">
+
+                        <img src="img4.jpg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="img1.jpg" id="imagebox" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand:varanga</p>
+                    <h2>Men Black Biker jackets</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price">Brand:varanga</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                         Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>size: <select name="size">
+
+                            <option value="select size">select size</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select></p>
+                    <p>Quantity:<input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart "></i>
+                        Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="related">
+            <h2>related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="item1.jpg" alt="">
+                        <div class="details">
+                            <p>Brown Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>USD $120.00</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="item2.jpg" alt="">
+                        <div class="details">
+                            <p>Navy Blue Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>USD $80.00</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="item3.jpg" alt="">
+                        <div class="details">
+                            <p>Green Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>USD $110.00</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="item4.jpg" alt="">
+                        <div class="details">
+                            <p>White Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>USD $140.00</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+
+</html>
